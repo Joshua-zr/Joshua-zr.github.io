@@ -20,7 +20,7 @@
 body {
   background: #fafafa;
   margin: 0;
-  font: 17px/1.7 "PingFang SC", "Helvetica Neue",
+  font: 15px/1.7 "PingFang SC", "Helvetica Neue",
   Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei",
   微软雅黑, STHeiti, 华文细黑, sans-serif;
   color: #555;
@@ -30,16 +30,45 @@ img {
   border: none;
 }
 
-.header {
-  background: #1b39ab;
-  height: 70px;
+a {
+  text-decoration: none;
 }
 
-.wrapper {
-  width: 960px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  background: #fff;
-  margin: auto;
+.header {
+  background: #00b0b8;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header .logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  /*字体居中*/
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+
+  position: fixed;
+  left: 50%;
+  margin-left: -30px;
+  top: 15px;
+
+  /*颜色样式*/
+  background: #00c4cc;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-wrapper {
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 40px;
   padding: 30px;
 }
 
