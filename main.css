@@ -50,27 +50,32 @@ a {
 }
 
 .banner-page {
-  background: url("./images/women-beauty.jpg");
   height: 450px;
   background-size: cover;
   background-position: 50% 50%;
   margin-top: -50px;
 }
 
-.tagline {
-  margin-top: 150px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  font-weight: normal;
+.banner-page .container {
+  position: relative;
+  height: 100%;
 }
 
-.tagline-caption {
-  color: #fff;
-  font-size: 20px;
+.read-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
   text-align: center;
-  opacity: 0.8;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
+.read-btn:hover {
+  color: #000;
+  border-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .post-list-wapper {
