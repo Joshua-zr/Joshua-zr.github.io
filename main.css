@@ -30,17 +30,155 @@ img {
   border: none;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.banner-page {
+  background: url("./images/women-beauty.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: -50px;
+}
+
+.tagline {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.tagline-caption {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.post-list-wapper {
+  padding: 70px 0;
+  background: #ebeced;
+}
+
+.post {
+  float: left;
+  background: #fff;
+  width: 300px;
+  height: 320px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+  /*为date设置的*/
+  position: relative;
+}
+
+.thumbnail-image {
+  display: block;
+  position: relative;
+}
+
+.thumbnail-image::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.thumbnail-image:hover::before {
+  opacity: 0.6;
+}
+
+.post .thumbnail {
+  display: block;
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.post-info a {
+  color: #000;
+}
+
+.post-info a:hover {
+  color: #b5b9bd;
+}
+
+.post .post-info {
+  margin: 24px;
+}
+
+.post h3 {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.post .date {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  font-size: 13px;
+  color: #b5b9bd;
 }
 
 .header {
-  background: #00b0b8;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
   height: 50px;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
+}
+
+.header .nav {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-top: 12px;
+}
+
+.header .nav li {
+  list-style: none;
+  float: left;
+  margin-right: 7px;
+}
+
+.header .nav li a {
+  color: #fff;
+  font: 13px;
+  padding: 8px 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.header .nav li.current a {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff transparent;
+}
+
+.header .nav li a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header .logo {
@@ -55,7 +193,7 @@ a {
   line-height: 60px;
   font-size: 35px;
 
-  position: fixed;
+  position: absolute;
   left: 50%;
   margin-left: -30px;
   top: 15px;
@@ -63,6 +201,21 @@ a {
   /*颜色样式*/
   background: #00c4cc;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+  /*tansiton效果*/
+  transition: top .2s ease-out, box-shadow .2s ease-out;
+}
+
+.header .logo:hover {
+  top: 18px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blog-banner {
+  background: url(images/wind.jpg);
+  height: 800px;
+  background-size: cover;
+  margin-top: -50px;
 }
 
 .blog-wrapper {
